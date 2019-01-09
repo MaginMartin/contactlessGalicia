@@ -1,0 +1,121 @@
+@import "mixin";
+
+:root {
+    --color-menu: #fafafa;
+    --li-border-color: #ff8b1d;
+    --txt-color: rgb(43, 43, 43);
+}
+
+h3 {
+    font-size: 1.5em;
+
+}
+
+.menu {
+    padding-top: 2%;
+    padding-left: 4%;
+}
+
+.menuMobile{
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    height: 100%;
+    background-color: rgba(248, 112, 8, 0.925);
+    left: -100%;
+    opacity: 0;
+}
+.inMenu {
+
+    /* margin: 0% 0% 0% 14%; */
+    h3 {}
+
+    ul {
+        margin-left: - 15%;
+
+        @include mQ2(1000px) {
+            margin-left: 15%;
+        }
+
+        
+
+    }
+//
+
+
+    li {
+        font-size: 1em;
+        // font-family:'Open Sans';
+        line-height: 1em;
+        list-style: none;
+        padding-left: 0%;
+        
+
+        /* width: 40%; */
+        a {
+            padding-left: 6%;
+            color: var(--txt-color);
+            text-decoration: none;
+
+            &:hover {
+                cursor: pointer;
+                color: var(--li-border-color);
+                /* border-left:var(--li-border-color) 4px solid;  */
+                text-decoration: none;
+            }
+            &:visited{
+                text-decoration: none;
+            }
+            @include mQ(320px){
+                height: 2em;
+                width: 100%;
+            
+            }
+
+        }
+
+    }
+    //
+}
+
+
+//   a{
+//     padding-left: 6%;
+//     color:var(--txt-color);
+//     text-decoration: none;
+// }
+// h3 a,li a:hover{
+// cursor: pointer;
+// color: var(--li-border-color);
+// /* border-left:var(--li-border-color) 4px solid;  */
+// text-decoration: none; 
+// }
+
+
+li a:visited {
+    text-decoration: none;
+    /* color:rgb(238, 228, 228); */
+}
+
+.barraA {
+    border-left: var(--li-border-color) 4px solid;
+    font-weight: 700;
+}
+#trMenu{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    &:visited{
+            background-color: #aa5403
+    }
+    a{
+        color: white;
+        font-weight: 600;
+        height: 50%;
+        &:hover{
+        cursor: pointer;}
+       
+    }
+    
+}

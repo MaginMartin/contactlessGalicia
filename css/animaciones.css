@@ -1,0 +1,10 @@
+.A{
+    -webkit-animation: entrada 1s ease-in;
+    -moz-animation: entrada 1s ease-in;
+    animation: entrada 2s ease-in;
+
+}
+@keyframes entrada{
+    0%{opacity: 0;};
+    100%{opacity: 1;}
+}

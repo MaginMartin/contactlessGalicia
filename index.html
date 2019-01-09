@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Posgrado Mktng</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/stylesMenu.css">
+    <link rel="stylesheet" href="css/animaciones.css">
+    <link rel="stylesheet" href="css/barraScroll.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="container-fluid">
+        <div id="trMenu"></div>
+       
+    </header>
+    <main class="row">
+
+        <section class="container-fluid row ">
+
+
+            <article class="  contenido  col-md-9 ">
+           
+                <!-- <div class="ctrl-temas">
+                        <div class="ctrl-opcion"><a href="#"></a></div>
+                        <div class="ctrl-opcion"><a href="#"></a></div>
+                        <div class="ctrl-opcion"><a href="#"></a></div>
+
+                    </div> -->
+
+
+                <!-- <div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+                    <div id="container2" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div> -->
+            </article>
+        </section>
+
+
+        <section class="menu  col-md-3">
+
+
+            <div class="inMenu">
+                <h3></h3>
+                <ul>
+                    <li><a onclick="mostrarMacro(1)" href="#" class="menuItem">Macro Entorno</a></li>
+                    <li><a onclick="mostrarMacro(2)" href="#" class="menuItem">Micro Entorno</a></li>
+                    <li><a onclick="mostrarMacro(3)" href="#" class="menuItem">FODA</a></li>
+                    <li><a onclick="mostrarMacro(4)" href="#" class="menuItem">Estrategia</a></li>
+                    <li><a onclick="mostrarMacro(5)" href="#" class="menuItem">Objetivos</a></li>
+
+
+                </ul>
+            </div>
+
+
+
+
+        </section>
+
+
+    </main>
+    <footer></footer>
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+ 
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+
+
+
+    <!-- <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script> -->
+
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+    <!-- <script src="js/scriptV.js"></script> -->
+
+
+    <script src="js/jsprincipal.js"></script>
+    <script src="js/content.js"></script>
+    <!-- <script src="js/macro.js"></script> -->
+    <script src="js/menu.js"></script>
+    <!-- <script>
+        
+        var cont = $('.contenido');
+
+    var cont1 = '<h1>Hola</h1>';
+    var cont2 = '<h1>Hola DOS</h1>';
+    var cont3 = '<h1>Hola TRES</h1>';
+    var cont4 = '<h1>Hola CUATRO</h1>';
+    function mostrarData(n){
+
+        switch(n){
+            case 1 :
+            cont.empty();
+            cont.append(cont1);
+
+            break;
+            case 2 :
+            cont.empty();
+            cont.append(cont2);
+
+            break;
+            case 3 :
+            cont.empty();
+            cont.append(cont3);
+
+            break;
+            case 4 :
+            cont.empty();
+            cont.append(cont4);
+
+            break;
+
+
+
+        }
+
+
+    }
+        </script> -->
+
+
+
+
+    <script>
+
+        // Build the chart
+        Highcharts.chart('container', {
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            title: {
+                text: 'Browser market shares in January, 2018'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Brands',
+                colorByPoint: true,
+                data: [{
+                    name: 'Chrome',
+                    y: 61.41,
+                    sliced: true,
+                    selected: true
+                }, {
+                    name: 'Internet Explorer',
+                    y: 11.84
+                }, {
+                    name: 'Firefox',
+                    y: 10.85
+                }, {
+                    name: 'Edge',
+                    y: 4.67
+                }, {
+                    name: 'Safari',
+                    y: 4.18
+                }, {
+                    name: 'Other',
+                    y: 7.05
+                }]
+            }]
+        });
+
+
+        Highcharts.chart('container2', {
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'World\'s largest cities per 2017'
+            },
+            subtitle: {
+                text: 'Source: <a href="http://en.wikipedia.org/wiki/List_of_cities_proper_by_population">Wikipedia</a>'
+            },
+            xAxis: {
+                type: 'category',
+                labels: {
+                    rotation: -45,
+                    style: {
+                        fontSize: '13px',
+                        fontFamily: 'Verdana, sans-serif'
+                    }
+                }
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Population (millions)'
+                }
+            },
+            legend: {
+                enabled: false
+            },
+            tooltip: {
+                pointFormat: 'Population in 2017: <b>{point.y:.1f} millions</b>'
+            },
+            series: [{
+                name: 'Population',
+                data: [
+                    ['Shanghai', 24.2],
+                    ['Beijing', 20.8],
+                    ['Karachi', 14.9],
+                    ['Shenzhen', 13.7],
+                    ['Guangzhou', 13.1],
+                    ['Istanbul', 12.7],
+                    ['Mumbai', 12.4],
+                    ['Moscow', 12.2],
+                    ['São Paulo', 12.0],
+                    ['Delhi', 11.7],
+                    ['Kinshasa', 11.5],
+                    ['Tianjin', 11.2],
+                    ['Lahore', 11.1],
+                    ['Jakarta', 10.6],
+                    ['Dongguan', 10.6],
+                    ['Lagos', 10.6],
+                    ['Bengaluru', 10.3],
+                    ['Seoul', 9.8],
+                    ['Foshan', 9.3],
+                    ['Tokyo', 9.3]
+                ],
+                dataLabels: {
+                    enabled: true,
+                    rotation: -90,
+                    color: '#FFFFFF',
+                    align: 'right',
+                    format: '{point.y:.1f}', // one decimal
+                    y: 10, // 10 pixels down from the top
+                    style: {
+                        fontSize: '13px',
+                        fontFamily: 'Verdana, sans-serif'
+                    }
+                }
+            }]
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>

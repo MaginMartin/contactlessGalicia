@@ -1,0 +1,141 @@
+@import "mixin";
+
+.row{
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+:root  {
+    --color-menu:#eeeeee;
+    --header-color:#ff8b1d;
+    --header-H:55px;
+}
+
+header{
+    height:var(--header-H);
+    background-color: var(--header-color);
+    position: fixed;
+    z-index: 1001;
+}
+
+
+section:nth-child(2){
+        background-color:var(--color-menu);
+        height: 100vh;
+        position: fixed;
+        z-index: 1000;
+        margin-top: var(--header-H);
+        border-left: #dfdede 1px solid;
+        right:0%;
+        overflow: scroll;
+
+}
+section:first-child{
+    margin-top: var(--header-H);
+    padding-left: 7%;
+}
+
+.h2principal{
+    margin: 0.5em 0em .5em 0em;
+}
+
+h2{
+    font-family: 'PT Sans';
+    font-weight: 900;
+    font-size: 2.6em;
+    margin: 1.3em 0em -.1em 0em;
+    font-weight: 400;
+    color: black;
+}
+
+span p{
+    font-size: .9em;
+}
+
+
+p,li {  
+    font-family: 'Noto Sans';
+    margin:2% 5% 3% 3%;
+    line-height: 1.8em;
+    font-size: 1.1em;
+}
+img{
+    width: 70%;
+    margin-top: 2%;
+
+}
+.ctrl-temas{
+      /* height: auto; */
+      width: 100px;
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      /* justify-items: center; */
+      align-items: center;
+      bottom: 10%;
+      left: 2%;
+      @include mQ(320px){
+          left: -8%;
+      }
+      @include mQ(375px){
+        left: -5%;
+    }
+    @include mQ(425px){
+        left: -6%;
+    }
+    @include mQ(768px){
+        left: 0%;
+    }
+
+
+}
+
+.ctrl-opcion {
+    justify-items: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #dddddd;
+    width: 20%;
+    height: 21px;
+    margin: 2% 0%;
+    position: relative;
+    &:hover{
+        background-color: var(--header-color);
+    }
+
+    a{
+        width: 20px;
+        height: 21px;
+        display: block;
+        @include mQ(320px){
+            
+        }
+    }
+
+}
+
+.ctrl-op-Selec{
+    width: 60%;
+    height: 57px;  
+    background-color: var(--header-color);
+
+
+}
+
+
+
+.h2principal{
+    font-size: 3.5em;
+    /* font-weight: 700; */
+}
+
+table,tr,td{
+    border: black 1px solid;
+    margin: 2% 2% 0% 2%;
+}
+.caratula{
+    img{
+        width: 95% !important;
+        margin-top: 2% !important;
+    }
+}

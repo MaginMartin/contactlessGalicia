@@ -1,0 +1,14 @@
+@mixin mQ($pantalla) {
+    @media screen and (min-width:$pantalla) {
+        @content;
+         
+    }
+    
+}
+@mixin mQ2($pantalla) {
+    @media screen and (max-width:$pantalla) {
+        @content;
+         
+    }
+    
+}
